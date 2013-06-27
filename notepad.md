@@ -1,4 +1,3 @@
-
 ### 编译安装php5.4
 
 * libiconv扩展
@@ -55,7 +54,7 @@ nohup commod &
 http://hi.baidu.com/wan_zk/item/3163e2008ce9ea14cd34ea24
 
 
-#ubuntu默认启用了密码环
+### ubuntu默认启用了密码环
 sudo rm -rf ~/.gnome2/keyrings/
 
 
