@@ -18,3 +18,19 @@ function cutstr($string, $length)
   
     return join('', $info[0]);
 }
+
+
+
+/**
+ * @desc 正则提取字符串合法字符（中文、数字、字母、下划线）
+ * @char-set UTF-8
+ * 
+ **/
+function match_string($str)
+{
+    if(preg_match_all("/[\x{4e00}-\x{9fa5}|0-9|a-z|A-Z|_]/u", $str, $matches)){
+        return $matches;
+    }else{
+        return false;
+    }
+}
