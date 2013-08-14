@@ -29,7 +29,7 @@ function cutstr($string, $length)
 function match_string($str)
 {
     if(preg_match_all("/[\x{4e00}-\x{9fa5}|0-9|a-z|A-Z|_]/u", $str, $matches)){
-        return $matches;
+        return $matches[0] ? implode("", $matches[0]) : '';
     }else{
         return false;
     }
