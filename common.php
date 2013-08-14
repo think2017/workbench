@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @desc 中文字符串截取函数
+ * @desc 中文字符串截取函数(一个中文字符识为长度为3)
  * @char-set UTF-8
  * 
  **/
@@ -17,6 +17,34 @@ function cutstr($string, $length)
     }
   
     return join('', $info[0]);
+}
+
+
+/**
+ * @desc 中文字符串截取函数(将一个中文字符识为长度为一的字符)
+ * @char-set UTF-8
+ * 
+ **/
+function utf_substr($str, $len)
+{
+    for($i=0;$i<$len;$i++)
+    {
+        $temp_str = substr($str,0,1);
+        $str_code = ord($temp_str);
+        
+        if($str_code >= 224){
+            $new_str[] = substr($str, 0, 3);
+            $str = substr($str, 3);
+        }elseif(192 <= $str_code && $str_code < 224){
+            $new_str[] = substr($str, 0, 2);          
+            $str = substr($str, 2);
+        }else{
+            $new_str[] = substr($str, 0, 1);          
+            $str = substr($str, 1);
+        }
+    }
+
+    return join($new_str);
 }
 
 
