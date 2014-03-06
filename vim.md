@@ -25,3 +25,9 @@
  * :set fileencodings=ucs-bom,utf-8,cp936
  * :set fileencoding=gb2312
  * :set termencoding=utf-8
+
+ 
+##其他设置(~/.vimrc)
+ * set num
+ * set ts=4
+ * set autoindent
