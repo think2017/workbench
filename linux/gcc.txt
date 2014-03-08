@@ -1,0 +1,34 @@
+
+/usr/local/src/lua-5.2.3/src
+
+
+gcc 编译 遇到的若干问题
+
+错误提示：
+undefined reference to `dlsym'
+解决方案：
+gcc 加 -ldl 参数
+
+错误提示：
+In function `math_sin':
+: undefined reference to `sin'
+解决方案：
+gcc 加 -lm 参数
+
+
+
+gcc编译lua脚本时
+
+错误提示：
+：undefined reference to `luaL_newstate'
+解决方案：
+gcc 加 /usr/local/src/lua-5.2.3/src/liblua.a
+
+
+
+gcc 和 g++ 编译的区别
+
+编译阶段，g++会调用gcc，对于c++代码，两者是等价的
+gcc命令不能自动和C＋＋程序使
+
+用的库联接，所以通常用g++来完成链接
