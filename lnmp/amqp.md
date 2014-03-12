@@ -22,7 +22,7 @@
  * tar zxvf amqp-1.0.10.tgz
  * cd amqp-1.0.10/ 
  * /usr/local/php/bin/phpize
- * ./configure --with-amqp
+ * ./configure --with-amqp --with-php-config=/usr/local/php/bin/php-config
  * make && sudo make install
  * 
  
