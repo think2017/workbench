@@ -24,7 +24,7 @@
  * /usr/local/php/bin/phpize
  * ./configure --with-amqp --with-php-config=/usr/local/php/bin/php-config
  * make && sudo make install
- * 
+
  
 ## 错误处理
 /root/amqp-1.0.9/amqp_queue.c: In function ‘read_message_from_channel’:
