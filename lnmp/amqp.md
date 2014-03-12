@@ -1,30 +1,32 @@
 用于ubuntu的默认源里面没有php5-amqp这个包，所以要用上amqp得考手动编译。
 
-首先安装必须的php编译工具
+## install php5-dev
+ * sudo apt-get install php5-dev
 
-sudo apt-get install php5-dev
+## install librabbitmq-dev
+ * sudo apt-get install librabbitmq-dev
 
-安装rabbitmq的库
-sudo apt-get install librabbitmq-dev
 
-如果你的Linux发行版没有现成的librabbitmq-dev包，那么可以通过下载源码编译安装
-然后如果你没有安装git话请安装一下git，因为我们要从官方的版本库中获取源代码
-# 克隆源码并编译
-git clone git://github.com/alanxz/rabbitmq-c.git
-cd rabbitmq-c
-git submodule init
-git submodule update
+## git clone 
+ * git clone git://github.com/alanxz/rabbitmq-c.git
+ * cd rabbitmq-c
+ * git submodule init
+ * git submodule update
 
-# 编译库
-autoreconf -i && ./configure && make && sudo make install
+## configure 
+* autoreconf -i && ./configure 
+* make && sudo make install
 
-然后我们需要去下载php扩展的源代码，地址在此：http://pecl.php.net/package/amqp
-当前最新版本为1.0.10
-wget http://pecl.php.net/get/amqp-1.0.10.tgz
-tar zxf amqp-1.0.10.tgz
-cd amqp-1.0.10/
-phpize && ./configure --with-amqp && make && sudo make install
-如果报错
+## install php-ext
+ * wget http://pecl.php.net/get/amqp-1.0.10.tgz
+ * tar zxvf amqp-1.0.10.tgz
+ * cd amqp-1.0.10/ 
+ * /usr/local/php/bin/phpize
+ * ./configure --with-amqp
+ * make && sudo make install
+ * 
+ 
+## 错误处理
 /root/amqp-1.0.9/amqp_queue.c: In function ‘read_message_from_channel’:
 /root/amqp-1.0.9/amqp_queue.c:341:11: error: ‘AMQP_FIELD_KIND_U64’ undeclared (first use in this function)
 /root/amqp-1.0.9/amqp_queue.c:341:11: note: each undeclared identifier is reported only once for each function it appears in
