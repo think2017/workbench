@@ -1,0 +1,35 @@
+[user]
+    name = 崔杨
+    email = yangcui@anjuke.com
+
+[alias]
+	ci = commit
+    co = checkout
+    br = branch
+    st = status
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen (%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    pager = true
+    status = auto
+    ui = true
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    frag = magenta bold
+    meta = yellow bold
+    new = green bold
+    old = red bold
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
