@@ -3,8 +3,8 @@
 
 ### install
   * sudo tar -xzvf ImageMagick.tar.gz
-  * cd ImageMagick-6.7.1-6
-  * ./configure -prefix=/usr/local/imagemagick -enable-lzw -with-modules
+  * cd ImageMagick-6.8.8-8/
+  * ./configure --prefix=/usr/local/ImageMagick
   * sudo make
   * sudo make install
   * /usr/local/imagemagick/bin/convert -version
@@ -16,7 +16,12 @@
   * sudo tar -zxvf imagick-3.1.0RC1.tgz
   * cd imagick-3.1.0RC1
   * sudo /usr/local/php/bin/phpize
-  * sudo ./configure --with-php-config=/usr/local/php/bin/php-config
+  * sudo ./configure --with-php-config=/usr/local/php/bin/php-config  --with-imagick=/usr/local/ImageMagick
   * sudo make
   * sudo make install
   
+
+
+### configure error:
+  * sudo ln -s /usr/local/include/ImageMagick-6/ /usr/local/ImageMagick/include/ImageMagick
+  * sudo ./configure --with-php-config=/usr/local/php/bin/php-config  --with-imagick=/usr/local/ImageMagick
