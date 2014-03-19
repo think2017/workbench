@@ -1,6 +1,5 @@
-
 ### wget ImageMagick.tar.gz
-  * sudo wget ftp://ftp.u-aizu.ac.jp/pub/graphics/image/ImageMagick/imagemagick.org/ImageMagick.tar.gz
+  * sudo wget http://www.imagemagick.org/download/ImageMagick.tar.gz
 
 ### install
   * sudo tar -xzvf ImageMagick.tar.gz
