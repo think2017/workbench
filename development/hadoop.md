@@ -17,6 +17,8 @@
 #### install hadoop-2.2.0
   * sudo wget http://mirrors.cnnic.cn/apache/hadoop/common/hadoop-2.2.0/hadoop-2.2.0-src.tar.gz
   * mvn package -Pdist,native -DskipTests -Dtar
+  * 
+  * cd /usr/src/hadoop-2.2.0-src/hadoop-dist/target/hadoop-2.2.0
 
 
 #### install hadoop-2.3.0
