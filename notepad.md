@@ -13,3 +13,6 @@
 
 #### bashrc 和 profile
   * https://wido.me/sunteya/understand-bashrc-and-profile
+
+#### markdown 语法
+  * http://wowubuntu.com/markdown/
