@@ -1,4 +1,3 @@
-
 ### download jdk-8-linux-x64.tar.gz
   * sudo wget -O jdk-8-linux-x64.tar.gz http://download.oracle.com/otn-pub/java/jdk/8-b132/jdk-8-linux-x64.tar.gz
   * sudo tar zxvf jdk-8-linux-x64.tar.gz
