@@ -1,4 +1,3 @@
-
 ## install tcl8.6.0
  * wget http://prdownloads.sourceforge.net/tcl/tcl8.6.0-src.tar.gz
  * tar zxvf tcl8.6.0-src.tar.gz
@@ -16,10 +15,11 @@
  * app-get install redis-server
  
 ## install phpredis
- * svn checkout http://phpredis.googlecode.com/svn/trunk/ phpredis
+ * git clone https://github.com/owlient/phpredis
  * cd phpredis
  * /usr/local/php/bin/phpize
  * ./configure --with-php-config=/usr/local/php/bin/php-config
  * make && make install
  
 
+ * svn checkout http://phpredis.googlecode.com/svn/trunk/ phpredis 
