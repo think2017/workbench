@@ -51,6 +51,9 @@
 ###设置文件格式
  * :set fileformats=unix,dos
 
+###显示行号
+ * :set nu
+ * :set nu!
 
 
 ###设置编码(~/.vimrc)
