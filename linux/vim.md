@@ -30,33 +30,33 @@
     
 
 
-###替换当前行中第一个(第一个)AAA为aaa
+####替换当前行中第一个(第一个)AAA为aaa
  * :s/AAA/aaa/
 
-###替换当前行中所有的(第一个)AAA为aaa
+####替换当前行中所有的(第一个)AAA为aaa
  * :s/AAA/aaa/g
 
 
-###替换从第n行开始到文本结尾中的(第一个)AAA为aaa
+####替换从第n行开始到文本结尾中的(第一个)AAA为aaa
  * :n,$s/AAA/aaa/
 
-###替换从第n行开始到文本结尾中的(所有)AAA为aaa
+####替换从第n行开始到文本结尾中的(所有)AAA为aaa
  * :n,$s/AAA/aaa/g
 
 
 
-###显示文件当前格式
+####显示文件当前格式
  * :set fileformat
 
-###设置文件格式
+####设置文件格式
  * :set fileformats=unix,dos
 
-###显示行号
+####显示行号
  * :set nu
  * :set nu!
 
 
-###设置编码(~/.vimrc)
+####设置编码(~/.vimrc)
  * :set encoding=utf-8
  * :set fileencodings=ucs-bom,utf-8,cp936
  * :set fileencoding=gb2312
@@ -64,7 +64,7 @@
 
 
  
-###其他设置(~/.vimrc)
+####其他设置(~/.vimrc)
  * set num
  * set ts=4
  * set autoindent
