@@ -70,7 +70,7 @@ function match_string($str)
  * 
  **/
 function utf8_strlen($string = null) {
-    preg_match_all(“/./us”, $string, $match);
+    preg_match_all("/./us", $string, $match);
 
     return count($match[0]);
 }
