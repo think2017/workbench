@@ -16,3 +16,9 @@
 
 #### markdown 语法
   * http://wowubuntu.com/markdown/
+
+#### git 使用当前版本的代码
+  * git co app-user-touch/page/user/touch/anjuke/property/View.js --ours
+  
+#### git 使用master版本的代码
+  * git co app-user-touch/page/user/touch/anjuke/property/View.js --theirs
