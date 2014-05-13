@@ -30,4 +30,5 @@
 ### zmq.so PHP extension
  * git clone git://github.com/mkoppanen/php-zmq.git
 
-
+### PHPDoc
+ * http://en.wikipedia.org/wiki/Phpdoc
