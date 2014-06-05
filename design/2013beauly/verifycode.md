@@ -1,7 +1,7 @@
 
 # 手机验证码发送API
 
-  * 地址：http://member.anjuke.com/memberapi/m?act=send_phone_code&server={server}&phone={phone}&ip={clientip}&custom={custom}
+  * 地址：http://member.xxx.com/memberapi/m?act=send_phone_code&server={server}&phone={phone}&ip={clientip}&custom={custom}
 
   * 参数说明：
     * {service}: 项目名
@@ -19,7 +19,7 @@
 
 # 手机验证码验证API
 
-  * 地址：http://member.anjuke.com/memberapi/m?act=verify_phone_code&server={server}&phone={phone}&code={code}
+  * 地址：http://member.xxx.com/memberapi/m?act=verify_phone_code&server={server}&phone={phone}&code={code}
 
   * 参数说明：
     * {service}: 项目名
