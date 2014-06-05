@@ -1,20 +1,15 @@
 
-### 阿里塔
-  * http://www.arita.cc/
-
-### Mcake
-  * http://www.mcake.com/
-
-### 阿里塔
-  * http://www.arita.cc/
-
-
 ### Memcached 内存分配机制介绍
  * http://blog.csdn.net/hguisu/article/details/7353482
 
 ### Linux下的五种I/O模型
  * http://blog.csdn.net/hguisu/article/details/7453390
   
+### REST API
+ * http://hmw.iteye.com/blog/1190827
+ * http://www.ibm.com/developerworks/cn/webservices/ws-restful/
+
+
 ### Apache
  * http://pan.baidu.com/share/link?shareid=917448229&uk=956362626
 
@@ -35,3 +30,13 @@
 
 ### MobileTech
  * https://github.com/jtyjty99999/mobileTech
+
+
+### 阿里塔
+  * http://www.arita.cc/
+
+### Mcake
+  * http://www.mcake.com/
+
+### 阿里塔
+  * http://www.arita.cc/
