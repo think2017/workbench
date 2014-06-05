@@ -4,7 +4,7 @@
 
 ## 手机验证码发送API
 
-  * 地址：http://topic.anjuke.com/2013beauty/send_code/{phone}
+  * 地址：http://topic.xxx.com/2013beauty/send_code/{phone}
 
   * 参数说明：
     * {phone}: 手机号
@@ -19,7 +19,7 @@
 
 ## 手机验证码验证API
 
-  * 地址：http://topic.anjuke.com/2013beauty/verify_code/{phone}/{code}
+  * 地址：http://topic.xxx.com/2013beauty/verify_code/{phone}/{code}
 
   * 参数说明：
     * {phone}: 手机号
@@ -35,7 +35,7 @@
 
 ## 手机投票API(二期)
  * 手机投票接口
-  * 地址：http://topic.anjuke.com/2013beauty/phone_poll/{id}/
+  * 地址：http://topic.xxx.com/2013beauty/phone_poll/{id}/
   * 参数说明：{brokerid}: 经纪人id
   * 返回值说明（JSON）： 
     * {'code':1, 'msg':"投票成功!"}
@@ -46,7 +46,7 @@
 
 
 ## 微信投票API(二期)
-   * 地址： http://topic.anjuke.com/2013beauty/weixin_poll/{id}/{guid}
+   * 地址： http://topic.xxx.com/2013beauty/weixin_poll/{id}/{guid}
    * 参数说明： 
      * {id}: 参赛选手id
      * {guid}: 微信用户guid
@@ -62,7 +62,7 @@
 
 ## 报名接口设计(一期)
   * 报名表单（POST）
-   * url http://topic.anjuke.com/2013beauty/join
+   * url http://topic.xxx.com/2013beauty/join
    * 参数：
       * title：美丽宣言
       * content：个人经历
