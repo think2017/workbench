@@ -3,7 +3,7 @@
 
 
 ### 地址
-  * http://user.anjuke.com/vppvQueue/?id={:id}&type={:type}
+  * http://user.xxx.com/vppvQueue/?id={:id}&type={:type}
   
 
 ### 参数
