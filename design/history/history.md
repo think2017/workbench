@@ -70,11 +70,11 @@
 
 ### 用户中心浏览历史URL
 
-  * 新房   http://user.anjuke.com/history/xinfang/
-  * 二手房 http://user.anjuke.com/history/fangyuan/
-  * 好租   http://user.anjuke.com/history/zu/
-  * 写字楼 http://user.anjuke.com/history/xzl/
-  * 商铺   http://user.anjuke.com/history/sp/
+  * 新房   http://user.xxx.com/history/xinfang/
+  * 二手房 http://user.xxx.com/history/fangyuan/
+  * 好租   http://user.xxx.com/history/zu/
+  * 写字楼 http://user.xxx.com/history/xzl/
+  * 商铺   http://user.xxx.com/history/sp/
 
 
             
