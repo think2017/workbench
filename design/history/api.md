@@ -3,7 +3,7 @@
 
 
 ### 获取用户浏览历史房源id
-  * URL:  http://user.anjuke.com/getHistory/?type=:type&limit=:limit&start=:start&userid=:userid&guid=:guid
+  * URL:  http://user.xxx.com/getHistory/?type=:type&limit=:limit&start=:start&userid=:userid&guid=:guid
 
   * Params: 
     * :type，  页面类型id
@@ -29,7 +29,7 @@
 
 
 ### 删除多条用户浏览历史
-  * URL： http://user.anjuke.com/delHistory/?action=delete&ids=:ids&type=:type
+  * URL： http://user.xxx.com/delHistory/?action=delete&ids=:ids&type=:type
 
   * Params: 
     * :action，执行方法
@@ -50,7 +50,7 @@
 
 
 ### 清空用户浏览历史
-  * URL： http://user.anjuke.com/delHistory/?action=delete_all&uid=:uid&type=:type
+  * URL： http://user.xxx.com/delHistory/?action=delete_all&uid=:uid&type=:type
 
   * Params: 
     * :action，执行方法
