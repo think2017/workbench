@@ -24,6 +24,6 @@
   * git co app-user-touch/page/user/touch/anjuke/property/View.js --theirs
 
 #### git 撤销一次提交
-    * git revert HEAD
-    * git revert HEAD^  
-    * git revert commit fa042ce57ebbe5bb9c8db709f719cec2c58ee7ff
+  * git revert HEAD
+  * git revert HEAD^  
+  * git revert commit fa042ce57ebbe5bb9c8db709f719cec2c58ee7ff
