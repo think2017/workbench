@@ -20,7 +20,7 @@
   * git revert fa042ce57ebbe5bb9c8db709f719cec2c58ee7ff
 
 
-#### Samab 服务配置
+#### Samba 服务配置
   * sudo vim /etc/sysconfig/iptables
   * -A INPUT -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT
   * -A INPUT -m state --state NEW -m tcp -p tcp --dport 139 -j ACCEPT
