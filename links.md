@@ -54,3 +54,12 @@
 
 #### 阿里塔
   * http://www.arita.cc/
+
+#### ICP备案查询
+  * http://www.miitbeian.gov.cn/publish/query/indexFirst.action
+  * 
+  
+
+
+
+
