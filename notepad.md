@@ -2,6 +2,17 @@
   * sudo /etc/init.d/networking restart
  
 
+#### shell 颜色设置
+  * export PS1="\e[36m[\e[33;1m\u@\e[31;1m\h:\e[32;1m\w\e[36m] \e[33m\\$ \e[0m"
+  * shell 颜色表示 
+  * \e[31m 红色
+  * \e[32m 绿色
+  * \e[33m 黄色
+  * \e[34m 蓝色
+  * \e[31;1m 红色字体颜色高亮
+  * 30~37是字体颜色、40~47是背景颜色
+
+
 #### windows 刷新DNS 命令
   * ipconfig /flushdns
 
