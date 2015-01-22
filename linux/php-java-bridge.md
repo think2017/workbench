@@ -72,7 +72,8 @@
     * php -i|grep "java"
     
   * add JavaBridge
-    * wget http://nchc.dl.sourceforge.net/project/php-java-bridge/Binary%20package/php-java-bridge_6.2.1/exploded/JavaBridge.jar
-    * mv ./JavaBridge.war /opt/app/tomcat/webapps/
+    * wget http://iweb.dl.sourceforge.net/project/php-java-bridge/OldFiles/php-java-bridge_5.2.2_j2ee.zip
+    * unzip php-java-bridge_5.2.2_j2ee.zip
+    * mv ./php-java-bridge_5.2.2_j2ee/JavaBridge.war /opt/app/tomcat/webapps/
     * /opt/app/tomcat/bin/shutdown.sh 
     * /opt/app/tomcat/bin/startup.sh 
