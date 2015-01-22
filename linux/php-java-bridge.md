@@ -40,3 +40,39 @@
     * java -version
     
     
+#### Install Tomcat
+  * install
+    * wget http://apache.fayea.com/tomcat/tomcat-7/v7.0.57/bin/apache-tomcat-7.0.57.tar.gz
+    * tar zxvf apache-tomcat-7.0.57.tar.gz 
+    * mv ./apache-tomcat-7.0.57/ /opt/app/tomcat
+    
+  * add iptables port
+    * iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
+    * service iptables restart
+    
+  * start Tomcat
+    * /opt/app/tomcat/bin/startup.sh 
+
+#### Install php-java-bridge
+  * install
+    * wget http://nchc.dl.sourceforge.net/project/php-java-bridge/RHEL_FC%20SecurityEnhancedLinux/php-java-bridge_5.5.4.1/php-java-bridge_5.5.4.1.tar.gz
+    * tar zxvf php-java-bridge_5.5.4.1.tar.gz
+    * mv ./php-java-bridge_5.5.4.1/ /opt/app/php-java-bridge
+    * cd /opt/app/php-java-bridge
+    * /opt/app/php/bin/phpize
+    * ./configure --with-java=$JAVA_HOME --with-php-config=/opt/app/php/bin/php-config
+    * make
+    * make test & make insatll
+    
+  * edit php.ini
+    * vim /opt/app/php/etc/php.ini
+    * extension = "java.so"
+    
+  * Verify installation
+    * php -i|grep "java"
+    
+  * add JavaBridge
+    * wget http://nchc.dl.sourceforge.net/project/php-java-bridge/Binary%20package/php-java-bridge_6.2.1/exploded/JavaBridge.jar
+    * mv ./JavaBridge.war /opt/app/tomcat/webapps/
+    * /opt/app/tomcat/bin/shutdown.sh 
+    * /opt/app/tomcat/bin/startup.sh 
