@@ -53,6 +53,33 @@
   * start Tomcat
     * /opt/app/tomcat/bin/startup.sh 
 
+
+#### Install Pear and PhpDocumentor
+  * install Pear
+    * wget http://pear.php.net/~cweiske/1.9.5/go-pear.phar
+    * /opt/app/php/bin/php go-pear.phar
+    
+  * install PhpDocumentor
+    * wget http://download.pear.php.net/package/PhpDocumentor-1.4.3.tgz
+    * tar zxvf PhpDocumentor-1.4.3.tgz
+    * mv PhpDocumentor-1.4.3 /opt/app/php/lib/php/PhpDocumentor
+    * ln -s /opt/app/php/lib/php/PhpDocumentor/phpdoc /usr/local/bin/
+  
+  * edit php.ini
+    * vim /opt/app/php/etc/php.ini
+    * include_path = ".;/opt/app/php/lib/php/PhpDocumentor"
+  
+#### Install apache-ant
+  * install apache-ant
+    * wget http://mirrors.hust.edu.cn/apache//ant/binaries/apache-ant-1.9.4-bin.tar.gz
+    * tar zxvf apache-ant-1.9.4-bin.tar.gz
+    * mv apache-ant-1.9.4 /opt/app/apache-ant
+     
+  * edit profile
+    * vim /etc/profile
+    * export ANT_HOME=/opt/app/apache-ant
+    * export PATH=$PATH:$ANT_HOME/bin
+
 #### Install php-java-bridge
   * install
     * wget http://nchc.dl.sourceforge.net/project/php-java-bridge/RHEL_FC%20SecurityEnhancedLinux/php-java-bridge_5.5.4.1/php-java-bridge_5.5.4.1.tar.gz
