@@ -12,6 +12,9 @@
   * JDK 
   * Apache Tomcat
   * php-java-bridge
+  * Pear 
+  * Apache-ant
+  * PhpDocumentor
   
   
 #### Install JDK
