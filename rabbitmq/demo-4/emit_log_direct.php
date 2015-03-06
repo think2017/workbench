@@ -1,9 +1,5 @@
 <?php
 
-/**
- * PHP amqp(RabbitMQ) Demo-4
- * @author  yuansir <yuansir@live.cn/yuansir-web.com>
- */
 $severity = count($argv) > 2 ? $argv[1] : 'info';
 $message = empty($argv[2]) ? 'Hello World!' : ' ' . $argv[2];
 

@@ -1,9 +1,5 @@
 <?php
 
-/**
- * PHP amqp(RabbitMQ) Demo-4
- * @author  yuansir <yuansir@live.cn/yuansir-web.com>
- */
 $exchangeName = 'direct_logs';
 
 

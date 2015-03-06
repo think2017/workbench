@@ -1,9 +1,5 @@
 <?php
 
-/**
- * PHP amqp(RabbitMQ) Demo-3
- * @author  yuansir <yuansir@live.cn/yuansir-web.com>
- */
 $exchangeName = 'logs';
 
 $connection = new AMQPConnection(array('host' => '127.0.0.1', 'port' => '5672', 'vhost' => '/', 'login' => 'guest', 'password' => 'guest'));

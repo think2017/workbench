@@ -1,9 +1,5 @@
 <?php
 
-/**
- * PHP amqp(RabbitMQ) Demo-2
- * @author  yuansir <yuansir@live.cn/yuansir-web.com>
- */
 
 $exchangeName = 'demo';
 $queueName = 'task_queue';

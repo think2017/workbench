@@ -1,9 +1,5 @@
 <?php
 
-/**
- * PHP amqp(RabbitMQ) Demo-1
- * @author  yuansir <yuansir@live.cn/yuansir-web.com>
- */
 $exchangeName = 'demo';
 $queueName = 'hello';
 $routeKey = 'hello';

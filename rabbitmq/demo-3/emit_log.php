@@ -1,10 +1,5 @@
 <?php
 
-/**
- * PHP amqp(RabbitMQ) Demo-3
- * @author  yuansir <yuansir@live.cn/yuansir-web.com>
- */
-
 $exchangeName = 'logs';
 $message = empty($argv[1]) ? 'info:Hello World!' : ' '.$argv[1];
 
