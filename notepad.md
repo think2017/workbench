@@ -46,3 +46,16 @@
   * SELINUX= disable
   
 
+####supervisor
+* wget http://pypi.python.org/packages/source/s/supervisor/supervisor-3.0b1.tar.gz
+* tar -zxvf supervisor-3.0b1.tar.gz
+* cd supervisor-3.0b1
+* python setup.py install
+* echo_supervisord_conf  >/etc/supervisord.conf
+* vi /etc/supervisord.conf
+* [program:cronNotifyQueue]
+* command = php index.php cron notifyQueue
+* autostart = true
+* autorestart = true
+* directory = /home/website/PayCenter
+* user = root
