@@ -1,5 +1,5 @@
 
-#接口文档
+#手机号评分服务接口文档
 
 ###参数
 
@@ -75,7 +75,7 @@
    </tr>
    </table>
    
-   **当状态码code==1时，会返回data域，以手机号为key
+   **当状态码 code == 1 时，会返回data域，以手机号为 key
    
    <table>
    <tr>
@@ -136,16 +136,16 @@
    <tr>
    <td>L</td>
    <td>低风险</td>
-   <td>score取值小于等于10</td>
+   <td>score取值 [0,10]</td>
    </tr>
    <tr>
    <td>M</td>
    <td>中等风险</td>
-   <td>score取值大于10,小于等于80</td>
+   <td>score取值 (10，80] </td>
    </tr>
    <tr>
    <td>H</td>
    <td>高风险</td>
-   <td>score取值大于80</td>
+   <td>score取值 (80,100] </td>
    </tr>
    </table>
