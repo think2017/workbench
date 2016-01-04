@@ -31,6 +31,7 @@
 </table>
 
 ###返回参数
+
   **格式：JSON
 
   **状态码：code
@@ -69,6 +70,7 @@
    </table>
    
    **当状态码code==1时，会返回data域，以手机号为key
+   
    <table>
    <tr>
    <td>键</td>
@@ -123,7 +125,7 @@
    <tr>
    <td>值</td>
    <td>说明</td>
-   <td>msg</td>
+   <td>取值说明</td>
    </tr>
    <tr>
    <td>L</td>
