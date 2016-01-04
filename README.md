@@ -31,8 +31,10 @@
 </table>
 
 ###返回参数
-**格式：JSON
-**状态码：code
+  **格式：JSON
+
+  **状态码：code
+  
    <table>
    <tr>
    <td>值</td>
@@ -115,3 +117,27 @@
    </tr>
    </table>
    
+  **风险等级说明：rating
+  
+   <table>
+   <tr>
+   <td>值</td>
+   <td>说明</td>
+   <td>msg</td>
+   </tr>
+   <tr>
+   <td>L</td>
+   <td>低风险</td>
+   <td>score取值小于等于10</td>
+   </tr>
+   <tr>
+   <td>M</td>
+   <td>中等风险</td>
+   <td>score取值大于10,小于等于80</td>
+   </tr>
+   <tr>
+   <td>H</td>
+   <td>高风险</td>
+   <td>score取值大于80</td>
+   </tr>
+   </table>
