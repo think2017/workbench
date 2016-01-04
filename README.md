@@ -23,6 +23,12 @@
         <td>业务来源标识</td>
     </tr>
     <tr>
+        <td>order_id</td>
+        <td>char(13)</td>
+        <td>N</td>
+        <td>保留字段，订单号</td>
+    </tr>
+    <tr>
         <td>refresh</td>
         <td>bool</td>
         <td>N</td>
