@@ -136,12 +136,12 @@
    <tr>
    <td>L</td>
    <td>低风险</td>
-   <td>score取值 [0,10]</td>
+   <td>score取值 [0,10] </td>
    </tr>
    <tr>
    <td>M</td>
    <td>中等风险</td>
-   <td>score取值 (10，80] </td>
+   <td>score取值 (10,80] </td>
    </tr>
    <tr>
    <td>H</td>
@@ -149,3 +149,41 @@
    <td>score取值 (80,100] </td>
    </tr>
    </table>
+   
+   ###代码级调用，(适用于API内部调用)
+   <code>
+    $ci = & get_instance();   
+        $ci->load->library('ebuckler');
+        
+        $refresh = false;
+        $params = array(
+            'mobile' => '18606028163',
+            'from' => 'reg'
+        );
+        
+        $result = $ci->ebuckler->score( $params, $refresh );
+        return $result;
+   </code>
+
+   ###API服务调用，(适用于官网等外部项目调用)，以官网为例
+   <code>
+   
+    /**
+     * [risk 调用风控服务]
+     */
+    public function riskServices( $mobile )
+    {
+        $pram = array(
+            "mobile" => $mobile,
+            "from" => 'reg'
+        );
+        
+        $this->setSource('risk');
+        $this->set('mobile.score', $pram);
+        $result = $this->getApiContent();
+        $this->setSource('pc');
+        
+        return $result;
+    }
+    </code>
+    
