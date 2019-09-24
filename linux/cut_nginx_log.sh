@@ -14,3 +14,5 @@ mv ${log_path}active.fruitday.com.access.log ${log_path}active.fruitday.com.acce
 mv ${log_path}active.fruitday.com.error.log ${log_path}active.fruitday.com.error_$(date -d "yesterday" +"%Y%m%d").log
 mv ${log_path}access.log ${log_path}access_$(date -d "yesterday" +"%Y%m%d").log
 mv ${log_path}error.log ${log_path}error_$(date -d "yesterday" +"%Y%m%d").log
+
+kill -USR1 `cat ${pid_path}`
