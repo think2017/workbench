@@ -14,3 +14,18 @@ fi
 
 echo "SYNC Complete!"
 ```
+
+#### yunjiaofuH5打包代码脚本
+```
+#!/bin/bash
+
+if [ $1 == "staging" ]; then
+        cd /mnt/www/yunjiaofuStaging
+else
+        cd /mnt/www/yunjiaofuH5
+fi
+
+npm run build
+rm -rf ./src/*
+echo "NPM Build Complete!"
+```
