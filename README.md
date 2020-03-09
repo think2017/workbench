@@ -1,7 +1,7 @@
 
 
 #### yunjiaofuH5发布代码脚本 
-
+```
 #!/bin/bash
 cd /mnt/www/yunjiaofuH5
 git pull origin master
@@ -13,3 +13,4 @@ else
 fi
 
 echo "SYNC Complete!"
+```
