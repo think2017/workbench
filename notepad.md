@@ -23,6 +23,14 @@
 
 #### git 使用master版本的代码
   * git co app-user-touch/page/user/touch/anjuke/property/View.js --theirs
+  
+#### git 删除暂存区或分支上的文件，本地保留
+  * git rm --cached filename
+  * git rm --cached -f filepath
+  
+#### git 恢复删除暂存区或分支上的文件
+  * git rm --cached --ignore-unmatch filename
+  
 
 
 #### git 撤销一次提交
