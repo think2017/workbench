@@ -1,0 +1,23 @@
+
+mac使用cmark编译C++工程
+
+
+cd /usr/local
+wget https://boostorg.jfrog.io/artifactory/main/release/1.79.0/source/boost_1_79_0.tar.gz
+tar zxvf boost_1_79_0.tar.gz
+
+
+brew update --auto-update
+sudo chown -R $(whoami) /usr/local/include /usr/local/lib
+chmod u+w /usr/local/include /usr/local/lib
+brew install cmake
+
+mac安装OpenSSL
+https://blog.csdn.net/lining1041204250/article/details/79259159
+cd ~
+git clone git clone git@github.com:openssl/openssl.git
+cd openssl
+sudo mkdir /usr/local/openssl
+sudo ./config -–prefix=/usr/local/openssl
+sudo make && make install
+ 
