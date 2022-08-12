@@ -17,6 +17,9 @@ yum -y install jemalloc
 yum -y install snappy
 ln -sf /usr/lib64/libsnappy.so.1.1.4 /usr/lib64/libsnappy.so
 
+yum install http://repo.okay.com.mx/centos/7/x86_64/release/okay-release-1-1.noarch.rpm
+
+
 wget https://github.com/Kitware/CMake/releases/download/v3.24.0/cmake-3.24.0.tar.gz
 tar zxvf cmake-3.24.0.tar.gz
 cmake-3.24.0
