@@ -1,0 +1,35 @@
+
+gcc -v = 4.8
+cmake --version >= 3.0
+cat /etc/redhat-release <= 7.6
+
+yum install gcc gcc-c++
+yum install openssl-devel
+yum install mysql mysql-devel
+yum -y install tinyxml2 tinyxml2-devel
+ln -sf /usr/lib64/libtinyxml2.so.2.1.0 /usr/lib64/libtinyxml2.so
+yum -y install python3
+yum -y install epel-release
+yum install libevent-devel
+yum -y install ragel
+yum install ninja-build
+yum -y install jemalloc
+yum -y install snappy
+ln -sf /usr/lib64/libsnappy.so.1.1.4 /usr/lib64/libsnappy.so
+
+wget https://github.com/Kitware/CMake/releases/download/v3.24.0/cmake-3.24.0.tar.gz
+tar zxvf cmake-3.24.0.tar.gz
+cmake-3.24.0
+./configure
+make && make install
+cmake --version
+ 
+git clone git://github.com/ninja-build/ninja.git && cd ninja
+git checkout release
+yum -y install  meson ninja-build
+yum -y install ninja-build
+ 
+yum install -y cppunit-devel
+yum install -y ant
+wget https://github.com/apache/zookeeper/archive/release-3.4.13.tar.gz
+yum install meson
