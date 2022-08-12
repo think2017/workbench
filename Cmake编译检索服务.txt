@@ -19,6 +19,11 @@ ln -sf /usr/lib64/libsnappy.so.1.1.4 /usr/lib64/libsnappy.so
 
 yum install http://repo.okay.com.mx/centos/7/x86_64/release/okay-release-1-1.noarch.rpm
 
+wget https://github.com/protocolbuffers/protobuf/releases/download/v3.8.0/protobuf-all-3.8.0.tar.gz
+tar zxvf protobuf-all-3.8.0.tar.gz && cd protobuf-3.8.0/
+./configure
+make -j10
+make install
 
 wget https://github.com/Kitware/CMake/releases/download/v3.24.0/cmake-3.24.0.tar.gz
 tar zxvf cmake-3.24.0.tar.gz
