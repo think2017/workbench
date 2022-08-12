@@ -21,7 +21,7 @@ yum install http://repo.okay.com.mx/centos/7/x86_64/release/okay-release-1-1.noa
 
 wget https://github.com/protocolbuffers/protobuf/releases/download/v3.8.0/protobuf-all-3.8.0.tar.gz
 tar zxvf protobuf-all-3.8.0.tar.gz && cd protobuf-3.8.0/
-./configure
+./configure --prefix=/usr
 make -j10
 make install
 
